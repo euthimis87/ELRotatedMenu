@@ -1,0 +1,10 @@
+framework module ELRotatedMenu {
+  umbrella header "ELRotatedMenu.h"
+
+  export *
+  module * { export * }
+}
+
+module ELRotatedMenu.Swift {
+    header "ELRotatedMenu-Swift.h"
+}
