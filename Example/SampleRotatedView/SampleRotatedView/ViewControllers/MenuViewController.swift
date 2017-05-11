@@ -49,15 +49,15 @@ class MenuViewController: UIViewController {
     }
 
     @IBAction func flyAction(_ sender: UIButton) {
-        self.menuViewController?.setMainViewController(viewController: self.storyboard!.instantiateViewController(withIdentifier: String(describing: SecondViewController.self)) as! SecondViewController)
+        self.menuViewController?.setFrontViewController(viewController: self.storyboard!.instantiateViewController(withIdentifier: String(describing: SecondViewController.self)) as! SecondViewController)
     }
     
     @IBAction func rocketAction(_ sender: UIButton) {
-        self.menuViewController?.setMainViewController(viewController: self.storyboard!.instantiateViewController(withIdentifier: String(describing: FrontViewController.self)) as! FrontViewController)
+        self.menuViewController?.setFrontViewController(viewController: self.storyboard!.instantiateViewController(withIdentifier: String(describing: FrontViewController.self)) as! FrontViewController)
     }
     
     @IBAction func searchAction(_ sender: UIButton) {
-        self.menuViewController?.setMainViewController(viewController: self.storyboard!.instantiateViewController(withIdentifier: String(describing: SecondViewController.self)) as! SecondViewController)
+        self.menuViewController?.setFrontViewController(viewController: self.storyboard!.instantiateViewController(withIdentifier: String(describing: SecondViewController.self)) as! SecondViewController)
     }
     
     fileprivate func calculateAngleOfScreenDiagonal() -> Double {

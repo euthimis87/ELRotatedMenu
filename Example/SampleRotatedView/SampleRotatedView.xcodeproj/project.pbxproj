@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		23BE992D1EC322C000841D81 /* ELRotatedMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23BE992C1EC322C000841D81 /* ELRotatedMenu.framework */; };
-		23BE992E1EC322CB00841D81 /* ELRotatedMenu.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 23BE992C1EC322C000841D81 /* ELRotatedMenu.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		23B7D5861EC48412003B08ED /* ELRotatedMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23B7D5851EC48412003B08ED /* ELRotatedMenu.framework */; };
+		23B7D5871EC4841A003B08ED /* ELRotatedMenu.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 23B7D5851EC48412003B08ED /* ELRotatedMenu.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		23F0FB181EBCB813008E42FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F0FB171EBCB813008E42FA /* AppDelegate.swift */; };
 		23F0FB1D1EBCB813008E42FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23F0FB1B1EBCB813008E42FA /* Main.storyboard */; };
 		23F0FB1F1EBCB813008E42FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23F0FB1E1EBCB813008E42FA /* Assets.xcassets */; };
@@ -29,7 +29,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				23BE992E1EC322CB00841D81 /* ELRotatedMenu.framework in Embed Frameworks */,
+				23B7D5871EC4841A003B08ED /* ELRotatedMenu.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -37,7 +37,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		23BE992C1EC322C000841D81 /* ELRotatedMenu.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ELRotatedMenu.framework; sourceTree = "<group>"; };
+		23B7D5851EC48412003B08ED /* ELRotatedMenu.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ELRotatedMenu.framework; sourceTree = "<group>"; };
 		23F0FB141EBCB813008E42FA /* SampleRotatedView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleRotatedView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23F0FB171EBCB813008E42FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23F0FB1C1EBCB813008E42FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23BE992D1EC322C000841D81 /* ELRotatedMenu.framework in Frameworks */,
+				23B7D5861EC48412003B08ED /* ELRotatedMenu.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,7 +68,7 @@
 		23BE99071EC3180200841D81 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				23BE992C1EC322C000841D81 /* ELRotatedMenu.framework */,
+				23B7D5851EC48412003B08ED /* ELRotatedMenu.framework */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";

@@ -152,8 +152,10 @@ SWIFT_CLASS("_TtC13ELRotatedMenu13ELRotatedMenu")
 /// The value is in degrees.
 /// Default value is the angle between screen height and screen diagonal
 @property (nonatomic) CGFloat menuAngle;
-/// The size of menuButton
+/// The size of menu button
 @property (nonatomic) CGSize menuButtonSize;
+/// Hide from view the menu button
+@property (nonatomic) BOOL hideMenuButton;
 /// The background color of menuButton
 @property (nonatomic, strong) UIColor * _Nonnull menuButtonBackgroundColor;
 /// The image of menu button
@@ -170,7 +172,9 @@ SWIFT_CLASS("_TtC13ELRotatedMenu13ELRotatedMenu")
 /// Set the front ViewController
 /// \param viewController the frontViewController needs to be setted
 ///
-- (void)setMainViewControllerWithViewController:(UIViewController * _Nonnull)viewController;
+- (void)setFrontViewControllerWithViewController:(UIViewController * _Nonnull)viewController;
+/// Show or Hide Menu ViewController
+- (void)presentMenu;
 - (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id <UIViewControllerTransitionCoordinator> _Nonnull)coordinator;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
