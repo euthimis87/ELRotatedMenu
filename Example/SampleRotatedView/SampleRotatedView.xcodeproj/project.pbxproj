@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		23B7D5861EC48412003B08ED /* ELRotatedMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23B7D5851EC48412003B08ED /* ELRotatedMenu.framework */; };
-		23B7D5871EC4841A003B08ED /* ELRotatedMenu.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 23B7D5851EC48412003B08ED /* ELRotatedMenu.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		23F0FB181EBCB813008E42FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F0FB171EBCB813008E42FA /* AppDelegate.swift */; };
 		23F0FB1D1EBCB813008E42FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23F0FB1B1EBCB813008E42FA /* Main.storyboard */; };
 		23F0FB1F1EBCB813008E42FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23F0FB1E1EBCB813008E42FA /* Assets.xcassets */; };
@@ -20,6 +18,8 @@
 		23F1AADB1EC3120200EB33C2 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F1AAD81EC3120200EB33C2 /* SecondViewController.swift */; };
 		23F1AADF1EC312C600EB33C2 /* SampleColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F1AADE1EC312C600EB33C2 /* SampleColor.swift */; };
 		23F1AAE11EC312EC00EB33C2 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F1AAE01EC312EC00EB33C2 /* Assets.swift */; };
+		23F564801EC4B2A500A089C7 /* ELRotatedMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23F5647F1EC4B2A500A089C7 /* ELRotatedMenu.framework */; };
+		23F564811EC4B2AF00A089C7 /* ELRotatedMenu.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 23F5647F1EC4B2A500A089C7 /* ELRotatedMenu.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,7 +29,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				23B7D5871EC4841A003B08ED /* ELRotatedMenu.framework in Embed Frameworks */,
+				23F564811EC4B2AF00A089C7 /* ELRotatedMenu.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -37,7 +37,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		23B7D5851EC48412003B08ED /* ELRotatedMenu.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ELRotatedMenu.framework; sourceTree = "<group>"; };
 		23F0FB141EBCB813008E42FA /* SampleRotatedView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleRotatedView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23F0FB171EBCB813008E42FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23F0FB1C1EBCB813008E42FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -51,6 +50,7 @@
 		23F1AAD81EC3120200EB33C2 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		23F1AADE1EC312C600EB33C2 /* SampleColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleColor.swift; sourceTree = "<group>"; };
 		23F1AAE01EC312EC00EB33C2 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		23F5647F1EC4B2A500A089C7 /* ELRotatedMenu.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ELRotatedMenu.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23B7D5861EC48412003B08ED /* ELRotatedMenu.framework in Frameworks */,
+				23F564801EC4B2A500A089C7 /* ELRotatedMenu.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,7 +68,7 @@
 		23BE99071EC3180200841D81 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				23B7D5851EC48412003B08ED /* ELRotatedMenu.framework */,
+				23F5647F1EC4B2A500A089C7 /* ELRotatedMenu.framework */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";

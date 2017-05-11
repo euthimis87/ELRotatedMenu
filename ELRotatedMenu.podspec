@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ELRotatedMenu"
-  s.version      = "1.0.0"
+  s.version      = "1.2.0"
   s.summary      = "An iOS side menu with animation of rotation"
 
   # This description is used to generate tags and improve search results.
@@ -26,8 +26,8 @@ Pod::Spec.new do |s|
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = "An iOS side menu with animation of rotation writen in Swift"
 
-  s.homepage     = "https://github.com/euthimis87/ELRotatedMenu"
-  # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
+  s.homepage     = "https://github.com/euthimis87/ELRotatedMenu.git"
+  s.screenshots  = "https://raw.githubusercontent.com/euthimis87/ELRotatedMenu/master/SampleRotatedMenu.gif"
 
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -87,7 +87,12 @@ Pod::Spec.new do |s|
   #  You can preserve files from being cleaned, please don't preserve
   #  non-essential files like tests, examples and documentation.
   #
-  s.resources = "Resources/Images.xcassets"
+  # s.resources = ['ELRotatedMenu/Resources/*.{pdf,png}']
+
+  s.resource_bundle = {
+    'ELRotatedMenu' => ['ELRotatedMenu/Resourses/*']
+  }
+  s.resources = "ELRotatedMenu/**/*.{png,pdf}"
 
   s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3' }
 

@@ -172,7 +172,7 @@ SWIFT_CLASS("_TtC13ELRotatedMenu13ELRotatedMenu")
 /// Set the front ViewController
 /// \param viewController the frontViewController needs to be setted
 ///
-- (void)setMainViewControllerWithViewController:(UIViewController * _Nonnull)viewController;
+- (void)setFrontViewControllerWithViewController:(UIViewController * _Nonnull)viewController;
 /// Show or Hide Menu ViewController
 - (void)presentMenu;
 - (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id <UIViewControllerTransitionCoordinator> _Nonnull)coordinator;

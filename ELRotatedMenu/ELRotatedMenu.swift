@@ -163,13 +163,20 @@ import UIKit
         menuButton.addTarget(self, action: #selector(presentMenu), for: .touchUpInside)
         self.view.addSubview(menuButton)
         
+        var bundle: Bundle?
+        
+        /// Get bundle of Pod, if framework is installed through Cocoapods
+        if let bundleURL = Bundle(for: type(of: self)).url(forResource: "ELRotatedMenu", withExtension: "bundle") {
+            bundle = Bundle(url: bundleURL)
+        }
+        
         menuImageView.frame = CGRect(x: menuButtonSize.width/4.0, y: 25.0, width: 25.0, height: 25.0)
-        menuImageView.image = menuImage ?? UIImage(named: "menuIcon", in: Bundle(for: type(of: self)), compatibleWith: nil)!
+        menuImageView.image = menuImage ?? UIImage(named: "menuIcon", in: bundle ?? Bundle(for: type(of: self)), compatibleWith: nil)!
         menuImageView.contentMode = .scaleAspectFit
         self.view.addSubview(menuImageView)
         
         closeMenuImageView.frame = CGRect(x: menuButtonSize.width/4.0, y: 25.0, width: 25.0, height: 25.0)
-        closeMenuImageView.image = closeMenuImage ?? UIImage(named: "closeIcon", in: Bundle(for: type(of: self)), compatibleWith: nil)!
+        closeMenuImageView.image = closeMenuImage ?? UIImage(named: "closeIcon", in: bundle ?? Bundle(for: type(of: self)), compatibleWith: nil)!
         closeMenuImageView.contentMode = .scaleAspectFit
         closeMenuImageView.rotate(aroundPoint: CGPoint(x: -self.closeMenuImageView.center.x, y: -self.closeMenuImageView.center.y), withAngle: CGFloat(70.0).toRadians())
         self.view.addSubview(closeMenuImageView)
