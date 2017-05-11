@@ -21,11 +21,11 @@ An iOS side menu with animation of rotation, inspired by UIMovement (https://uim
 
 1. In Storyboard set the class of Initial View Controller to ELRotatedMenu.
 
-<img src="https://github.com/euthimis87/ELRotatedMenu/blob/master/Screenshots/step1.png" alt="ELRotatedMenu Screenshot" width="320" height="568" />
+<img src="https://github.com/euthimis87/ELRotatedMenu/blob/master/Screenshots/step1.png" alt="ELRotatedMenu Screenshot" width="844" height="798" />
 
 2. Ctrl + Left Click on ELRotatedMenu and drag into the Menu View Controller. In the segue menu you will see, select "rotated menu". Next select the segue and in the Attributes Insepctor set as identifier "el_menu".
 
-<img src="https://github.com/euthimis87/ELRotatedMenu/blob/master/Screenshots/step2.png" alt="ELRotatedMenu Screenshot" width="320" height="568" />
+<img src="https://github.com/euthimis87/ELRotatedMenu/blob/master/Screenshots/step2.png" alt="ELRotatedMenu Screenshot" width="846" height="810" />
 
 3. The same flow as above to set the Front View Controller and set as identifier "el_front"
 
