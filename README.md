@@ -2,7 +2,7 @@
 
 An iOS side menu with animation of rotation, inspired by UIMovement (https://uimovement.com/ui/244/sticker-app/) 
 
-<img src="https://github.com/euthimis87/ELRotatedMenu/master/SampleRotatedMenu.gif" alt="ELRotatedMenu Screenshot" width="320" height="568" />
+<img src="https://github.com/euthimis87/ELRotatedMenu/blob/master/SampleRotatedMenu.gif" alt="ELRotatedMenu Screenshot" width="320" height="568" />
 
 ## Requirements
 * iOS >= 8.0
