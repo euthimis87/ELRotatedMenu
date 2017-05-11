@@ -74,7 +74,7 @@ import UIKit
     /// Set the front ViewController
     ///
     /// - Parameter viewController: the frontViewController needs to be setted
-    public func setMainViewController(viewController: UIViewController) {
+    public func setFrontViewController(viewController: UIViewController) {
         UIView.animate(withDuration: 0.5, animations: {
             self.mainContainer.rotate(aroundPoint: CGPoint(x: -self.mainContainer.center.x, y: -self.mainContainer.center.y), withAngle: CGFloat(-90.0).toRadians())
         }) { (completed) in
@@ -84,7 +84,7 @@ import UIKit
             
             viewController.view.frame = CGRect(x: 0.0, y: 0.0, width: self.view.bounds.width, height: self.view.bounds.height)
             self.mainContainer = viewController.view
-//            self.mainContainer.rotate(aroundPoint: CGPoint(x: -self.mainContainer.center.x, y: -self.mainContainer.center.y), withAngle: CGFloat(-90.0).toRadians())
+            self.mainContainer.rotate(aroundPoint: CGPoint(x: -self.mainContainer.center.x, y: -self.mainContainer.center.y), withAngle: CGFloat(-90.0).toRadians())
             self.mainContainer.autoresizingMask = [UIViewAutoresizing.flexibleWidth, UIViewAutoresizing.flexibleHeight]
             self.view.insertSubview(self.mainContainer, belowSubview: self.menuButton)
             viewController.didMove(toParentViewController: self)
